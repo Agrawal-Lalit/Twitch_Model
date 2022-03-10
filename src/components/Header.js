@@ -11,8 +11,8 @@ const Header=()=> {
     <div className="ui segment">
     <div   className="ui sticky" style={{width: '670px', height: '43px' ,left: '460px'}}>
       <div className="ui fluid three item tabular menu">
-        <Link to="/another" className={`item ${activeTab===1 ? 'active':''}`} onClick={()=>setActiveTab(1)}>Second Page</Link>
-        <Link to="/"        className={`item ${activeTab===2 ? 'active':''}`} onClick={()=>setActiveTab(2)}>Home page</Link>
+        <Link to="/"        className={`item ${activeTab===1 ? 'active':''}`} onClick={()=>setActiveTab(1)}>Home</Link>
+        <Link to="/video" className={`item ${activeTab===2 ? 'active':''}`} onClick={()=>setActiveTab(2)}>Video</Link>
         <GoogleAuth/>
       </div>
     </div>

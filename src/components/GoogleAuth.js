@@ -25,7 +25,7 @@ class GoogleAuth extends Component {
         });
     }
     stateUpdate=()=>{
-      this.auth.isSignedIn.get() ? this.props.actionSignIn(AuthId) :this.props.actionSignOut();
+      this.auth.isSignedIn.get() ? this.props.actionSignIn(window.gapi.client.getToken().access_token) :this.props.actionSignOut();
     }
 
     renderAuthButton(){
