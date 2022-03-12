@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import {actionSignIn ,actionSignOut} from '../actions'
 import {connect} from 'react-redux'
+import reducers from '../reducers'
+
+
 const AuthId='119001645891-20k9ihc95104fdmig7s0qg15rs0kv8bv.apps.googleusercontent.com' ;
 
 
