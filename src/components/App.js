@@ -12,7 +12,7 @@ const App=()=> {
     <div className="ui active tab">
     <Routes>
     <Route path="/"      element={<Home/>}/>
-    <Route path="/video" element={<Video/>}/>
+    <Route path="/video/:id" element={<Video/>}/> //now Video component will have id property in props/match/params
     </Routes>
     </div>
         
